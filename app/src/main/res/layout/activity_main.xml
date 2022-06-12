@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width = "match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5D77FF"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profile_image"
+                android:src="@drawable/background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginLeft="25dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Users" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"/>
+
+
+</LinearLayout>
