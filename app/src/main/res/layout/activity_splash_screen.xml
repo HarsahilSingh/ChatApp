@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="550dp"
             android:text="    Get Connected with"
             android:textColor="@color/black"
             android:textSize="25dp"
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="370dp"
+            android:layout_marginTop="580dp"
             android:text="        your loved ones"
             android:textColor="@color/black"
             android:textSize="25dp"

@@ -16,8 +16,6 @@
             android:layout_height="wrap_content"
             android:padding="8dp">
 
-
-
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
